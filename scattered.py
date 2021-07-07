@@ -1,0 +1,5 @@
+import pandas as pd
+import plotly.express as px
+df=pd.read_csv("data2.csv")
+fig=px.scatter(df, x="student_id", y="level", color="attempt", size="attempt")
+fig.show()
